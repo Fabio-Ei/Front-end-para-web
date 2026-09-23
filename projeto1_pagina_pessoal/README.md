@@ -21,4 +21,4 @@ Nome da página: Identidade.
 
 - link da img do avatar: https://pt.vecteezy.com/arte-vetorial/46409821-avatar-perfil-icone-dentro-plano-estilo-masculino-do-utilizador-perfil-ilustracao-em-isolado-fundo-homem-perfil-placa-o-negocio-conceito
 - link da img do controle: https://www.istockphoto.com/br/fotos/controle-de-video-game
-- link do vídeo: 
+- link do vídeo: https://youtu.be/C9Kj594dRxU
