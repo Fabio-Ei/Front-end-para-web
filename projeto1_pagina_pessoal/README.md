@@ -10,12 +10,8 @@ Nome da página: Identidade.
 
 ## Descrição
 
-- O index.html é a página principal onde faço uma breve introdução. trajetória, Interesses, cursos
-- Apresentação da área de interesse
-- Apresentação das tecnologias utilizadas
-- Exibição dos projetos desenvolvidos
-- Acesso a links externos
-- Seção para contato
+- O index.html é a página principal onde faço uma breve introdução. Nesta página falo da minha trajetória na área da programação, os meus interesses e em quais cursos realizei e que estou realizando. No final da página tem um formulário, meramente demonstrativo, para mandar uma mensagem de contato
+- Ao acessar a página de interesses através do link disponível no index.html, poderá acessar as informações sobre meu hobbie.
 
 ## Recurso utilizado
 
@@ -23,28 +19,6 @@ Nome da página: Identidade.
 
 ## Fontes
 
-- 
-
-### Banco de dados
-
-1. Acesse o phpMyAdmin pelo endereço `http://localhost/phpmyadmin/`.
-2. Clique em **Importar**.
-3. Selecione o arquivo `portfolio.sql` presente neste repositório.
-4. Execute a importação.
-5. Após a importação, confirme que o banco `portfolio` e suas tabelas foram criados.
-
-### Acessando o projeto
-
-Após iniciar o Apache e o MySQL e configurar o banco de dados, abra o navegador e acesse:
-
-`http://localhost/Portfolio/`
-
-> Este projeto atualmente está configurado para execução em ambiente local.
-
-## 📚 Aprendizados
-
-Durante o desenvolvimento deste projeto, pratiquei e aprendi:
-
-- Utilização do Figma para criação de componentes e exportação de imagens estilizadas, facilitando a implementação das interfaces.
-- Criação de modais utilizando o elemento `dialog` do HTML em conjunto com JavaScript e CSS.
-- Integração entre estrutura HTML, estilos CSS e interações JavaScript para desenvolver elementos interativos da interface.
+- link da img do avatar: https://pt.vecteezy.com/arte-vetorial/46409821-avatar-perfil-icone-dentro-plano-estilo-masculino-do-utilizador-perfil-ilustracao-em-isolado-fundo-homem-perfil-placa-o-negocio-conceito
+- link da img do controle: https://www.istockphoto.com/br/fotos/controle-de-video-game
+- link do vídeo: 
