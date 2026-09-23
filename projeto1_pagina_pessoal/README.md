@@ -1,6 +1,6 @@
 # Título
 
-Nome do projeto: Pagina pessoal;
+Nome do projeto: Pagina pessoal
 Nome da página: Identidade.
 
 ## Instrução
@@ -17,19 +17,13 @@ Nome da página: Identidade.
 - Acesso a links externos
 - Seção para contato
 
-## 🚀 Como executar
+## Recurso utilizado
 
-### Pré-requisitos
+- VSCode
 
-- XAMPP
-- Navegador web
-- Git (opcional)
+## Fontes
 
-### Configuração
-
-1. Instale o XAMPP.
-2. Coloque a pasta do projeto dentro do diretório `htdocs` do XAMPP.
-3. Inicie os serviços **Apache** e **MySQL** pelo painel do XAMPP.
+- 
 
 ### Banco de dados
 
