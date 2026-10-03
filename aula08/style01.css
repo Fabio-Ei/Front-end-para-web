@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: aquamarine;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Organização geral da página*/
+
+.layout-pagina {
+    display: grid;
+
+    grid-template-areas: 
+    "header header"
+    "sidebar main"
+    "footer footer"
+    ;
+    grid-template-columns: 220px 1fr;
+    grid-template-rows: auto 1fr auto;
+
+    min-height: 100vh;
+}
+
+.cabecalho {
+    grid-area: header;
+
+    background-color: rgb(0, 66, 35);
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+.cabecalho h1{
+    margin: 0 0 10px;
+}
+
+.cabecalho {
+    margin: 0;
+}
+
+/* Barra Lateral*/
+
+.barra-lateral {
+    grid-area: sidebar;
+
+    background-color: #dbeafe;
+    padding: 20px;
+}
+
+barra-lateral h2 {
+    color: #173f6d;
+}
+
+.barra-lateral ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.barra-lateral li{
+    margin-bottom: 10px;
+}
+
+.barra-lateral a {
+    display: block;
+    background-color: #3178cb;
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.barra-lateral a:hover {
+    background-color: #173f6d;
+}
+
+/*Conteúdo Principal*/
+
+.conteudo-principal {
+    grid-area: main;
+    padding: 30px;
+}
+
+.conteudo-principal h2 {
+    margin: 0;
+    color: #173f6d;
+}
+
+.grid-principal {
+    display: grid;
+    grid-template: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+/*Cards*/
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #cdb5e1;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px black;
+}
+
+.card h3 {
+    margin: 0;
+    color: #3178c6;
+
+}
+
+.card p {
+    display: inline-block;
+    background-color: #3178c6;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.card a:hover {
+    background-color: #173f6b;
+}
