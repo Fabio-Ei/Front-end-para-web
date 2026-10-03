@@ -111,7 +111,7 @@ barra-lateral h2 {
 
 }
 
-.card p {
+.card a {
     display: inline-block;
     background-color: #3178c6;
     color: white;
