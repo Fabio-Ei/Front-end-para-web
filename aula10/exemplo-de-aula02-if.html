@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horário e previsão do tempo</title>
+</head>
+<body>
+    
+    <p>
+        O programa mostrará uma saudação e uma recomendação de acordo com o clima.
+    </p>
+
+    <script>
+        const datahora = new Date();
+        const hora = datahora.getHours();
+
+        let previsaoTempo = prompt("Como está o tempo? Digite chuvoso ou ensolarado?");
+
+        previsaoTempo = previsaoTempo.toLowerCase().trim();
+
+        if(hora < 12) {
+            alert("Bom dia!");
+            if(previsaoTempo === "ensolarado") {
+                alert("Use protetor solar");
+            }
+            else {
+                alert("O dia está chovoso, não esqueça o guarda-chuva!");
+            }
+        }
+        else if(hora < 18) {
+            alert("Boa tarde!");
+            if(previsaoTempo === "ensolarado") {
+                alert("Use protetor solar");
+            }
+            else {
+                alert("O dia está chovoso, não esqueça o guarda-chuva!");
+            }
+        }
+        else {
+            alert("Boa noite!");
+            if(previsaoTempo === "ensolarado") {
+                alert("Use protetor solar");
+            }
+            else {
+                alert("O dia está chovoso, não esqueça o guarda-chuva!");
+            }
+        }
+    </script>
+
+</body>
+</html>

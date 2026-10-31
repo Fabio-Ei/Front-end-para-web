@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversão de tipos</title>
+</head>
+<body>
+    <h1>Conversão de tipos no JavaScript</h1>
+
+    <p>Clique no botão para informar dois números inteiros.</p>
+
+    <button type="button" id="botao-calcular">
+        Iniciar cálculo
+    </button>
+
+    <script>
+        "use strict";
+
+        const botao_calcular = document.getElementById("botao-calcular");
+
+        botao_calcular.addEventListener("click", function(){
+            let a;
+
+            let auxiliar = prompt("Digite o valor de a: ");
+
+            a = parseInt(auxiliar, 10);
+
+            let b = parseInt(prompt("Digite o valor de b: "), 10);
+
+            alert(`${a} + ${b} = ${a + b}`);
+        });
+
+    </script>
+</body>
+</html>
