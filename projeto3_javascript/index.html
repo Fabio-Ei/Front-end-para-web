@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubra seu caminho de aprendizado no Front-End.">
+
+    <title>Descubra seu caminho no Front-End</title>
+
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <header class="cabecalho">
+        <h1>Descubra seu caminho no Front-End</h1>
+        <p>Encontre uma direção para sua jornada no desenvolvimento web.</p>
+
+        <button
+            type="button"
+            id="btnTema"
+            class="btn-tema"
+            aria-label="Trocar tema da página"
+        >
+            Trocar tema
+        </button>
+    </header>
+
+    <main class="container">
+
+        <section class="card-principal" aria-labelledby="titulo-formulario">
+
+            <h2 id="titulo-formulario">Vamos começar?</h2>
+
+            <p>
+                Informe seu nome e escolha a tecnologia que deseja aprender.
+            </p>
+
+            <div id="alertBox">
+            </div>
+
+            <form id="formOrientacao">
+
+                <div class="campo">
+                    <label for="nomeUsuario">Seu nome:</label>
+
+                    <input
+                        type="text"
+                        id="nomeUsuario"
+                        name="nomeUsuario"
+                        placeholder="Digite seu nome"
+                        autocomplete="name"
+                        required
+                    >
+                </div>
+
+                <fieldset class="campo">
+                    <legend>Qual tecnologia deseja aprender?</legend>
+
+                    <div class="opcoes">
+
+                        <label class="opcao">
+                            <input
+                                type="radio"
+                                id="html"
+                                name="tecnologia"
+                                value="HTML"
+                                required
+                            >
+                            HTML
+                        </label>
+
+                        <label class="opcao">
+                            <input
+                                type="radio"
+                                id="css"
+                                name="tecnologia"
+                                value="CSS"
+                            >
+                            CSS
+                        </label>
+
+                        <label class="opcao">
+                            <input
+                                type="radio"
+                                id="javascript"
+                                name="tecnologia"
+                                value="JavaScript"
+                            >
+                            JavaScript
+                        </label>
+
+                    </div>
+                </fieldset>
+
+                <button
+                    type="submit"
+                    id="btnGerarOrientacao"
+                    class="btn-principal"
+                >
+                    Gerar orientação
+                </button>
+
+            </form>
+
+        </section>
+
+        <section
+            class="resultado"
+            id="areaResultado"
+            aria-labelledby="titulo-resultado"
+            aria-live="polite"
+        >
+
+            <h2 id="titulo-resultado">Sua orientação</h2>
+
+            <div id="conteudoResultado">
+                <p>
+                    Sua orientação de estudos aparecerá aqui.
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        <p>&copy; 2026 - Descubra seu caminho no Front-End</p>
+    </footer>
+
+</body>
+</html>
