@@ -120,10 +120,10 @@ button:hover {
 
 #alertBox {
     display: none;
-    background-color: #d4edda;
-    color: #155724;
-    border: 1px solid #c3e6cb;
-    border-left: 5px solid #28a745;
+    background-color: #edd4d4;
+    color: #571515;
+    border: 1px solid #e6c3c3;
+    border-left: 5px solid #a72828;
     padding: 15px;
     margin-top: 15px;
     border-radius: 8px;
