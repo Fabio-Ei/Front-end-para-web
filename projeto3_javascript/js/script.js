@@ -7,29 +7,49 @@ const btnTema = document.getElementById("btnTema");
 btnTema.addEventListener("click", mudarTema);
 
 
-const btnGerar = document.getElementById("btnGerarOrientacao");
-const nomeUsuario = document.getElementById("nomeUsuario");
+const formulario = document.getElementById("formOrientacao");
+const resultado = document.getElementById("resultado");
 const alertBox = document.getElementById("alertBox");
 
-btnGerar.addEventListener("click", function(event) {
 
-    if (nomeUsuario.value.trim() === "") {
-        event.preventDefault();
+formulario.addEventListener("submit", function(event) {
+
+    const nomeUsuario = document.getElementById("nomeUsuario").value.trim();
+    event.preventDefault();
+
+    if (nomeUsuario === "") {
+
         alertBox.textContent = "⚠️ Ops! Por favor, digite seu nome antes de continuar.";
         alertBox.style.display = "block";
         return;
+
     } else {
-        const formulario = document.getElementById('meuFormulario');
 
-        formulario.addEventListener('submit', function(event) {
-            event.preventDefault();
+        alertBox.style.display = "none";
 
-            const dadosForm = new FormData(event.target);
-  
-  // O .get() vai buscar apenas o valor do radio que estiver selecionado
-            const nivelSelecionado = dadosForm.get('nivel');
+        const dadosForm = new FormData(event.target);
+
+        const tecnologiaSelecionada = dadosForm.get("tecnologia");
+
+        switch (tecnologiaSelecionada) {
+
+            case "HTML":
+                resultado.textContent = `Olá, ${nomeUsuario}! Continue praticando estruturação de páginas, tags semânticas, formulários, links e organização de conteúdo.`;
+                break;
+
+            case "CSS":
+                resultado.textContent = `Olá, ${nomeUsuario}! Continue praticando cores, espaçamentos, Flexbox, Grid e responsividade.`;
+                break;
+
+            case "JavaScript":
+                resultado.textContent = `Olá, ${nomeUsuario}! Continue praticando variáveis, funções, condicionais, laços de repetição, arrays e manipulação do DOM.`;
+                break;
+
+            default:
+                resultado.textContent = "Selecione uma tecnologia para receber sua orientação.";
+                
         }
 
-    alertBox.style.display = "none";
+    }
 
-}); 
+});
